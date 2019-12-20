@@ -1,3 +1,6 @@
 describe('page', () => {
-  it('works', () => {})
+  it('works', () => {
+      cy.visit('https://dvanakoncisveta.cz/');
+      cy.get('nav').toMatchImageSnapshot();
+  })
 })
